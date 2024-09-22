@@ -36,6 +36,10 @@ const Cartsection = () => {
             }
         </div>
 
+        {
+            carts.length === 0 && <img src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png" className='w-[250px] md:w-72 block mx-auto mb-10' alt="empty" />
+        }
+
         <div className='m-5'>
 
             <div className='border-t border-black'>
