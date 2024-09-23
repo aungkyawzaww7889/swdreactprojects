@@ -11,15 +11,15 @@ import toast from 'react-hot-toast';
 
 const Productdetail = () => {
   
-  const {productid} = useParams();
+  const {productSlug} = useParams();
   const {products} = useProuctStore();
 
   // console.log(productid);
 
-  // const currentProduct = products.find((product) => product === productid);
+  const currentProduct = products.find((product) => product.slug === productSlug);
   // console.log(productid);
 
-  const currentProduct = products[productid-1];
+  // const currentProduct = products[productid-1];
   // console.log(currentProduct.id);
 
   const {carts,addCart} = useCartStore();
@@ -47,7 +47,7 @@ const Productdetail = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 py-6 '>
 
               <div className=''>
-                  <img src={currentProduct.image} className='h-[300px] md:h-[400px] md:w-1/2 block md:mx-auto' alt="" />
+                  <img src={currentProduct.image} className='h-[300px] md:h-auto md:w-1/2 block md:mx-auto' alt="" />
               </div>
 
               <div className='col-span-1 flex flex-col items-start gap-5 p-5'>

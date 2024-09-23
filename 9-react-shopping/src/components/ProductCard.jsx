@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import useCartStore from '../store/useCartStore'
 import toast from 'react-hot-toast'
 
-const ProductCard = ({product:{id,title,price,image,rating:{rate}}}) => {
+const ProductCard = ({product:{id,title,price,image,rating:{rate},slug}}) => {
 
   // console.log(carts);
 
@@ -23,7 +23,7 @@ const ProductCard = ({product:{id,title,price,image,rating:{rate}}}) => {
   }
 
   const handelOpenDetail = ()=>{
-    navigate(`/productdetail/${id}`)
+    navigate(`/productdetail/${slug}`)
   }
 
   const handelAdded = (event)=>{
