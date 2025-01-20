@@ -2,9 +2,7 @@ import React from 'react'
 
 const Heading = () => {
   return (
-    <div>
-      <p className='text-3xl font-bold font-serif'>Task Manager</p>
-    </div>
+    <h1 className='font-bold font-serif mb-5 text-3xl'> Task Manager</h1>
   )
 }
 

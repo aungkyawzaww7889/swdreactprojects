@@ -1,19 +1,19 @@
 import React from 'react'
 
-const Task = ({taskss,removeTask}) => {
+const Task = ({job,removeTask}) => {
 
-    const removeTaskbtn = ()=>{
-        if(confirm("Are you sure to delete?")){
-            removeTask(taskss)
+    const removeTaskBtn = ()=>{
+        if(confirm("Are you sure to delete")){
+            removeTask(job);
         }
     }
 
   return (
-    <div className='border rounded-lg p-3 mb-3 last:mb-0 flex justify-between items-center'>
-        <p>{taskss}</p>
-        <button onClick={removeTaskbtn} type='button' className='text-sm text-red-400 bg-red-200 border border-red-100 p-2 rounded'>Delete</button>
+    <div className='flex justify-between items-center border-2 border-slate-300 p-2 rounded-lg mb-3 last:mb-0'>
+      <p>{job}</p>
+      <button onClick={removeTaskBtn} className='bg-red-100 px-3 py-2 text-sm text-red-400 rounded-lg hover:bg-red-200 '>Delete</button>
     </div>
-  );
-};
+  )
+}
 
 export default Task

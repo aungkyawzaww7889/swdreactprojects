@@ -1,34 +1,29 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
-import Heading from './components/Heading'
-import CreateTask from './components/CreateTask'
-import TaskList from './components/TaskList'
+import { useState } from "react";
+import CreateTask from "./components/CreateTask"
+import Heading from "./components/Heading"
+import TaskList from "./components/TaskList"
 
-const App = () => {
-
-  const [tasks,settask] = useState([
-    
-      "task1",
-      "task2",
-      "task3",    
-      "task4",
-      "task5"
-
+function App() {
+  const [tasks,setTasks] = useState([
+    "Learn NestJS basics",
+    "Understand modules and controllers",
+    "Work with services and providers",
+    "Implement authentication and authorization"
   ]);
 
-  const addtasks = (newtask)=>{
-    settask([...tasks,newtask]);
+  const addTask = (newTask)=>{
+    setTasks([...tasks,newTask]);
   }
 
-  const removeTask = (removeitem)=>{
-   settask(tasks.filter((task)=>task !== removeitem));
+  const removeTask = (taskToRemove)=>{
+    setTasks(tasks.filter((task) => task != taskToRemove))
   }
 
   return (
-    <div className='p-10'>
+    <div className="p-10">
       <Heading/>
-      <CreateTask addtasks={addtasks}/>
-      <TaskList removeTask={removeTask} tasks={tasks}/> 
+      <CreateTask addTask={addTask} />
+      <TaskList tasks={tasks} removeTask={removeTask}/>
     </div>
   )
 }

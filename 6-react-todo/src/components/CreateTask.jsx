@@ -1,27 +1,24 @@
 import React, { useState } from 'react'
 
-const CreateTask = ({addtasks}) => {
+const CreateTask = ({addTask}) => {
 
-  const [job,setjob]  = useState("");
+    const [job,setJob] = useState("");
 
-  const onChangeHandel = (e)=>{
-    setjob(e.target.value);
-    
-  }
+    const handleOnChange = (event)=>{
+        // console.log(event.target.value);
+        setJob(event.target.value);
+    }
 
-  const addtaskbtn = ()=>{
-    addtasks(job);
-    setjob("");
-  }
+    const handleAddTaskBtn = ()=>{
+        // console.log(job);
+        addTask(job);
+        setJob("");
+    }
 
   return (
-    <div className='my-5'>
-        <form action="" method="">
-           <div className='flex'>
-              <input type="text" className='w-full border outline-none p-3 rounded' onChange={onChangeHandel} value={job} placeholder='Enter Task' autoFocus/>
-              <button type='button' className='bg-gray-200 border p-3 rounded' onClick={addtaskbtn}>Add</button>
-           </div>
-        </form>
+    <div className='flex'>
+      <input type="text" className='flex-grow border-2 border-slate-300 focus:outline-none px-3 py-2 rounded-l-md' value={job} onChange={handleOnChange} placeholder='Enter new task'/>
+      <button type='button' className='bg-slate-400 border-2 border-slate-300 p-3 rounded-r-md hover:bg-slate-500 text-white' onClick={handleAddTaskBtn}>Add</button>
     </div>
   )
 }

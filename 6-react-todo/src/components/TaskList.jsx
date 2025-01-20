@@ -1,19 +1,17 @@
 import React from 'react'
-import Task from './Task'
+import Task from '../components/Task.jsx';
 
 const TaskList = ({tasks,removeTask}) => {
 
-  // console.log(tasks);
   return (
+
     <div>
-        <h1 className='text-xl font-serif font-bold mb-2'>TaskList {tasks.length}</h1>
-
-        {tasks.map((task,idx)=>( 
-            <Task removeTask={removeTask} key={idx} taskss={task}/>
+        <h3 className='font-bold font-serif text-xl my-3 mt-4'>Task List (Total {tasks.length}), Done {0}</h3>
+        {tasks.map((task,idx)=>(
+            <Task key={idx} job={task} removeTask={removeTask}/>
         ))}
-
-
     </div>
+    
   )
 }
 
