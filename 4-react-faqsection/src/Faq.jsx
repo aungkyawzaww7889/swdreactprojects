@@ -13,7 +13,7 @@ const Faq = ({ faq: { id, question, answer, isOpen }, toggleQuestion }) => {
   };
   return (
     <div className="">
-      <div onClick={handleToggle} className="flex justify-between items-center select-none active:scale-90 duration-200 border border-black p-5">
+      <div onClick={handleToggle} className="flex justify-between items-center select-none active:scale-90 duration-200 border border-black p-5 cursor-pointer">
         <h1 className={` text-xl ${isOpen === false ? "" : " font-bold"}`}> {question} </h1>
         
         <svg
