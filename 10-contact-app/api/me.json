@@ -1,0 +1,11 @@
+{
+    "myinfos" : {
+        "name" : "Aung Kyaw Zaww",
+        "email" : "aungkyawzaww@gmail.com",
+        "phone" : "08123456789",
+        "age" : 20,
+        "gender" : "male",
+        "job" : "student",
+        "skill" : ["HTML", "CSS", "JS"]
+    }
+}
