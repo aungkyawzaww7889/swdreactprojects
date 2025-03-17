@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "task": "Build a project",
+      "isDone": true
+    },
+    {
+      "id": 3,
+      "task": "Read NestJS docs",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "task": "Write blog post",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "task": "Fix bugs",
+      "isDone": true
+    },
+    {
+      "id": 6,
+      "task": "Review PRs",
+      "isDone": false
+    },
+    {
+      "id": 7,
+      "task": "Update resume",
+      "isDone": false
+    },
+    {
+      "id": 8,
+      "task": "Prepare for interview",
+      "isDone": true
+    },
+    {
+      "id": 9,
+      "task": "Read a book",
+      "isDone": false
+    },
+    {
+      "id": 10,
+      "task": "Exercise",
+      "isDone": true
+    }
+  ]
+}
