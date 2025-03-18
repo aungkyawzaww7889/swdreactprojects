@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "task": "Build a project",
+      "isDone": true
+    },
+    {
+      "id": 2,
+      "task": "Read NestJS docs",
+      "isDone": true
+    },
+    {
+      "task": "hello",
+      "isDone": false,
+      "id": 3
+    }
+  ]
+}

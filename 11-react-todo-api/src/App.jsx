@@ -24,7 +24,8 @@ function App() {
 
     // headers မှာ s ကျန်ခဲ့လို့တိုင်ပတ်
     const data = await res.json();
-    setTasks([...tasks,data]);
+    // setTasks([...tasks,data]);
+    fetchTask();
     setSending(false);
 
   }

@@ -38,11 +38,6 @@
     {
       "id": 9,
       "task": "Read a book",
-      "isDone": false
-    },
-    {
-      "id": 10,
-      "task": "Exercise",
       "isDone": true
     }
   ]
