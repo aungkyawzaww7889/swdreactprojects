@@ -17,6 +17,7 @@ function App() {
   // const [tasks,setTasks] = useState([]);
   // const {data, error, isLoading} = useSWR('http://localhost:5000/tasks', fetcher);
   const {data, error, isLoading} = useSWR(`${myLocalApi}/tasks`, fetcher);
+  // console.log(isLoading); // true / false
   // const {data, error, isLoading} = useSWR(api, fetcher);
   // const {data, error, isLoading} = useSWR(todoApi, fetcher);
   const { mutate } = useSWRConfig();

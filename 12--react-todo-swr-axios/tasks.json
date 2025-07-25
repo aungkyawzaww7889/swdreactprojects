@@ -12,7 +12,7 @@
     },
     {
       "task": "hello",
-      "isDone": false,
+      "isDone": true,
       "id": 3
     }
   ]
